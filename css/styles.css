@@ -358,7 +358,7 @@ li {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--second-text-color);
-  /* opacity: 0; */
+
 }
 
 .cap-box::before {
@@ -370,13 +370,10 @@ li {
  
   background: var(--cap-box-before);
 
-  /* opacity: 0; */
+
 }
 
-/* .item:hover .cap-box::before, .cap-box:focus .cap-box::before, 
-.cap-box:hover .cap-overlay, .cap-box:focus .cap-overlay {
-  opacity: 1;
-} */
+
 
 /* Секція - Наша команда */
 
@@ -1015,7 +1012,6 @@ li {
   color: var(--form-second-color);
   border-bottom: 1px solid var(--form-second-color);
 
-
 }
 
 .form-field:focus input, .form-field:hover input,
@@ -1050,6 +1046,11 @@ li {
 
 }
 
+.button-form:focus, .button-form:hover{
+  background: #188CE8;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .form-button{
   display: flex;
   align-items: center;
@@ -1069,14 +1070,13 @@ li {
 
 .form-icon svg {
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 0;
-  margin-top: 14px;
-  margin-bottom: 14px;
+  transform: translate( 0%, -50%);
+
   margin-left: 15px;
   box-sizing: border-box;
-  width: 12px;
-  height: 12px;
+
 }
 
 input:focus-visible, textarea:focus-visible {
