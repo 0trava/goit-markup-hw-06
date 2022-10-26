@@ -329,14 +329,14 @@
     <footer class="footer">
         <div class="container">
             <div>
-            <a href="./index.html" class="logo foot-web"><span class="logo-span">Web</span>Studio</a>
-            <address>
-                <ul class="footer-adr">
-                    <li><a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer nofollow" class="footer-adr">м. Київ, пр-т Лесі Українки, 26</a></li>
-                    <li ><a href="mailto:info@devstudio.com" class="footer-nav-mail">info@devstudio.com</a></li>
-                    <li ><a href="tel:+38096111111" class="footer-nav-tel">+38 096 111 11 11</a></li>
-                </ul>                                  
-            </address>
+                <a href="./index.html" class="logo foot-web"><span class="logo-span">Web</span>Studio</a>
+                <address>
+                    <ul class="footer-adr">
+                        <li><a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer nofollow" class="footer-adr">м. Київ, пр-т Лесі Українки, 26</a></li>
+                        <li ><a href="mailto:info@devstudio.com" class="footer-nav-mail">info@devstudio.com</a></li>
+                        <li ><a href="tel:+38096111111" class="footer-nav-tel">+38 096 111 11 11</a></li>
+                    </ul>                                  
+                </address>
             </div>
             <div class="footer-link">
                 <p>приєднуйтесь</p>
@@ -363,19 +363,114 @@
                     </a>
                 </div>
             </div>
+            <form class="subscription">
+                <label for="form-subscription">Підпишіться на розсилку</p>
+
+                <div class="subscription-icon">
+                <input class="form-subscription" type="email" name="email" id="form-subscription" placeholder="E-mail"/>
+                <button type="submit" class="subscription-button">
+                    Підписатись
+                    <svg class= "footer-send" width = 24px heigh = 24px >
+                        <use href="./images/icons.svg#footer-send"></use>
+                    </svg>
+                </button>
+                </div>
+
+            </form>
         </div>
     </footer>
 
 
+
+    <!-- Модальне вікно -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button data-modal-close class="modal-but">
-                <svg width = 11px heigh = 11px>
-                    <use href="./images/icons.svg#icon-Vector"></use>
+                <svg width = "11px" heigh = "11px">
+                    <use href="./images/icons.svg#icon-X"></use>
                 </svg>
             </button>
+                <!-- Форма: Залиште свої дані -->
+
+                <form class="form">
+                    <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
+                    <!-- імя -->
+                    <div class="form-field" >                    
+                            <label for="name">Ім'я</label>
+                            
+                            <div class="form-icon" >
+                                <input type="text" width="448px" name="user-nsme" id="name" autofocus >    
+                                <svg width = "12px" height="12px">
+                                    <use href="./images/icons.svg#icon-person"></use>
+                                </svg>
+                            </div>
+                    </div>
+                    <!-- Телефон -->
+                    <div class="form-field">
+                        <label for="tel">Телефон</label>
+                     
+
+                        <div class="form-icon" >
+                            <input type="text" name="tel" id="tel">    
+                            <svg width = "13px" height="13px">
+                                <use href="./images/icons.svg#phone"></use>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Пошта -->
+                    <div class="form-email  form-field">
+                        <label for="email">Пошта</label>
+
+                        <div class="form-icon" >
+                            <input type="email" name="email" id="email">    
+                            <svg width = "15px" height="12px">
+                                <use href="./images/icons.svg#email"></use>
+                            </svg>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Коментар -->
+                    <div class="form-comment">
+                        <label for="comment">Коментар</label>
+                        <textarea class="comment" name="comment" id="comment"  placeholder="Введіть текст"></textarea>
+                    </div>
+
+                    <!-- Погоджуюсь з розсилкою -->
+                    <div class="form-checkbox">
+                        <label class="label" for="agree">
+                        <input class="checkbox" type="checkbox" name="agree" value="" id="agree">
+                        
+                        <div class="icon-span">
+                            <span class=""></span>
+                            <svg  class="icons-checkbox" width = "11px" height="8px">
+                                <use href="./images/icons.svg#check"></use>
+                            </svg>
+                        </div>
+                        Погоджуюся з розсилкою та приймаю&ensp;
+                        <span><a href=""> Умови договору</a></span>
+                        </label> 
+                    </div>
+ 
+                    <!-- Кнопка відправити -->
+
+                    <div class="form-button">
+                        <button type="submit" class="button-form">Відправити</button>
+                    </div>
+                </form>  
+
+
+
         </div>
     </div>
+
+
+  
+
+
+
+
     
     <script src="./js/modal.js"></script>
 </body>
