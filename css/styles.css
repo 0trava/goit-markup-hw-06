@@ -1084,6 +1084,10 @@ input:focus-visible, textarea:focus-visible {
   border-radius: 3px;
 }
 
+.form-subscription:focus-visible{
+  color: var(--footer-text-color);
+}
+
 /* ховаемо чекбокс */
 
 .checkbox{
